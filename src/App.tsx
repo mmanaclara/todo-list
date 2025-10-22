@@ -3,7 +3,9 @@ import Icon from "./components/Icon";
 
 import TrashIcon from "./assets/icons/trash.svg?react";
 import CheckIcon from "./assets/icons/check.svg?react";
+import PlusIcon from "./assets/icons/plus.svg?react";
 import Badge from "./components/Badge";
+import Button from "./components/Button";
 
 export default function App() {
   return (
@@ -15,6 +17,7 @@ export default function App() {
       <div>
         <Badge variant="secondary">5</Badge>
         <Badge>2 de 5</Badge>
+        <Button icon={PlusIcon}>Land a job</Button>
       </div>
     </>
   );
