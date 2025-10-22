@@ -1,7 +1,11 @@
+import Text from "./components/Text";
+
 export default function App() {
   return (
     <>
-      <h1 className="p-5">Hello World</h1>
+      <Text variant="body-md" className="text-pink-dark">
+        Hello World
+      </Text>
     </>
   );
 }
