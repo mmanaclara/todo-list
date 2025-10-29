@@ -4,11 +4,13 @@ import Icon from "./components/Icon";
 import TrashIcon from "./assets/icons/trash.svg?react";
 import CheckIcon from "./assets/icons/check.svg?react";
 import PlusIcon from "./assets/icons/plus.svg?react";
+import PencilIcon from "./assets/icons/pencil.svg?react";
 import Badge from "./components/Badge";
 import Button from "./components/Button";
 import ButtonIcon from "./components/ButtonIcon";
 import InputText from "./components/InputText";
 import InputCheckbox from "./components/InputCheckbox";
+import Card from "./components/Card";
 
 export default function App() {
   return (
@@ -23,12 +25,15 @@ export default function App() {
         <Button icon={PlusIcon}>Land a job</Button>
 
         <div>
-          <InputText />
           <ButtonIcon className="mx-4" icon={TrashIcon} />
           <ButtonIcon className="mx-4" icon={TrashIcon} variant="secondary" />
-          <ButtonIcon className="mx-4" icon={TrashIcon} variant="tertiary" />
         </div>
-        <InputCheckbox />
+        <Card className="px-8 py-6 mx-4 flex">
+          <InputCheckbox />
+          <InputText className="grow" />
+          <ButtonIcon className="mx-4" icon={TrashIcon} variant="tertiary" />
+          <ButtonIcon className="mx-4" icon={PencilIcon} variant="tertiary" />
+        </Card>
       </div>
     </>
   );
