@@ -8,6 +8,7 @@ import Badge from "./components/Badge";
 import Button from "./components/Button";
 import ButtonIcon from "./components/ButtonIcon";
 import InputText from "./components/InputText";
+import InputCheckbox from "./components/InputCheckbox";
 
 export default function App() {
   return (
@@ -27,6 +28,7 @@ export default function App() {
           <ButtonIcon className="mx-4" icon={TrashIcon} variant="secondary" />
           <ButtonIcon className="mx-4" icon={TrashIcon} variant="tertiary" />
         </div>
+        <InputCheckbox />
       </div>
     </>
   );
